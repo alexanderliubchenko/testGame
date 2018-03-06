@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo__wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+    -webkit-animation-name: show_hide;
+            animation-name: show_hide;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+.logo__text {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    z-index: 102;
+}
+
+.logo__circle {
+    position: absolute;
+    left: 451px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 222px;
+    z-index: 101;
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 8000ms;
+            animation-duration: 8000ms;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+.logo__letter {
+    width: 34px;
+    height: 34px;
+    display: block;
+    -webkit-animation-name: antispin;
+            animation-name: antispin;
+    -webkit-animation-duration: 2000ms;
+            animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+.logo__letter img {
+    vertical-align: top;
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes antispin {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
+
+@keyframes show_hide {
+    10% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.character {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.character__name {
+    margin-bottom: 10px;
+}
+
+.character__name input {
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
+
+.character__externality {
+    width: 133px;
+    margin: 20px auto;
+}
+
+.character__characteristics {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.character__characteristics label {
+    width: 50%;
+    font-size: 12px;
+    padding: 3px 0;
+}
+
+.character__characteristics input {
+    width: 50%;
+    font-size: 12px;
+    border: none;
+    text-align: right;
+    padding: 3px 0;
+}
+
+.character__characteristics input:nth-child(8), .character__characteristics input:nth-child(11) {
+    width: 43%;
+}
+
+.character__characteristics div:nth-child(9), .character__characteristics div:nth-child(12) {
+    width: 7%;
+    font-size: 12px;
+    text-align: right;
+    padding: 3px 0;
+    color: grey;
+}
+
+.character p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.character__skills, .character__equipment, .character__backpack {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.cell, .skills {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.no_weapons {
+    background-image: url(../img/hand.jpg);
+}
+
+.no_waistcoat {
+    background-image: url(../img/body.jpg);
+}
+
+.no_helmet {
+    background-image: url(../img/head.jpg);
+}
+
+.no_device {
+    background-image: url(../img/device.jpg);
+}
+
+.chapter {
+    width: 830px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    position: relative;
+}
+
+.story {
+    width: 100%;
+    position: relative;
+}
+
+.story__title {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+}
+
+.story__wrapper {
+    width: calc(100% - 18px);
+    height: 475px;
+    margin-left: 18px;
+    overflow-y: scroll;
+}
+
+.story-line {
+    display: none;
+    transition-timing-function: linear;
+}
+
+.story-line:first-child {
+    display: block;
+}
+
+.story__message, .story__interlocutor {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.story__message {
+    margin-left: calc(20% - 1px);
+    background: #fff;
+    color: #000;
+}
+
+.story__message span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.story__interlocutor {
+    margin-left: 0;
+    background: #000;
+    color: #fff;
+}
+
+.story__interlocutor span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.story__band {
+    height: 1px;
+    background: #000;
+}
+
+.story__control {
+    padding-top: 10px;
+}
+
+#storyOnward, #startMission {
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#storyOnward {
+    margin: 0 auto;
+}
+
+#startMission {
+    margin-top: 20px;
+}
+
+.story__mask {
+    position: absolute;
+    background: #fff;
+    width: 18px;
+    right: 0;
+    top: 54px;
+    height: 475px;
+}
+
+.arena {
+    
+}
+
+.menu {
+    width: 80px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.noteBlock {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 200px;
+    z-index: 98;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.noteBlock__title {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.noteBlock__characteristics {
+    font-size: 12px;
+}
+
+.noteBlock__characteristics table tr td {
+    width: 80px;
+}
+
+.noteBlock__characteristics table tr td:nth-child(even) {
+    text-align: right;
+}
+
+.buttonBlock {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 200px;
+    z-index: 99;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.buttonBlock__buttons {
+    display: block;
+    padding: 5px 0;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.darknessBlock {
+    display: none;
+    position: fixed;
+    z-index: 103;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+
+.darknessBlock__smoke {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/shadowComing.png');
+    background-repeat: no-repeat;
+    background-size: 305% 305%;
+}
+
+.darknessBlock__smoke:nth-child(1) {
+    background-position: top left;
+}
+
+.darknessBlock__smoke:nth-child(2) {
+    background-position: center left;
+}
+
+.darknessBlock__smoke:nth-child(3) {
+    background-position: bottom left;
+}
+
+.darknessBlock__smoke:nth-child(4) {
+    background-position: top center;
+}
+
+.darknessBlock__smoke:nth-child(5) {
+    background-position: center center;
+}
+
+.darknessBlock__smoke:nth-child(6) {
+    background-position: bottom center;
+}
+
+.darknessBlock__smoke:nth-child(7) {
+    background-position: top right;
+}
+
+footer {
+    height: 1000px;
+}

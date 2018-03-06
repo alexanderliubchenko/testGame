@@ -1,0 +1,95 @@
+{
+    "items": {
+        "no_weapons": {
+            "image": "",
+            "title": "Оружие отсутствует.",
+            "characteristics": {
+                "health": 0,
+                "damage": 0,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            }
+        },
+        "no_waistcoat": {
+            "image": "",
+            "title": "Жилет отсутствует.",
+            "characteristics": {
+                "health": 0,
+                "damage": 0,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            }
+        },
+        "no_helmet": {
+            "image": "",
+            "title": "Шлем отсутствует.",
+            "characteristics": {
+                "health": 0,
+                "damage": 0,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            }
+        },
+        "no_device": {
+            "image": "",
+            "title": "Устройство отсутствует.",
+            "characteristics": {
+                "health": 0,
+                "damage": 0,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            }
+        },
+        "empty": {
+            "image": "",
+            "title": "Пусто",
+            "characteristics": {
+                "health": 0,
+                "damage": 0,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            }
+        },
+        "revolver": {
+            "image": "url('../img/revolver.jpg')",
+            "title": "Револьвер",
+            "characteristics": {
+                "health": 0,
+                "damage": 200,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "gun"
+        },
+        "pistol": {
+            "image": "url(../img/pistol.jpg)",
+            "title": "Пистолет",
+            "characteristics": {
+                "health": 0,
+                "damage": 220,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "gun"
+        },
+        "electroshock": {
+            "image": "url(../img/electroshock.jpg)",
+            "title": "Электрошокер",
+            "characteristics": {
+                "health": 0,
+                "damage": 50,
+                "armor": 0,
+                "evasion": 20,
+                "sharpshooting": 10
+            },
+            "type": "rig"
+        }
+    }
+}

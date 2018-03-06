@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        
+        <div class="game">
+            
+            <div class="logo">
+                <div class="logo__title">
+                    <div class="container logo__wrapper">
+                        <div class="logo__text">the shad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w that dreamed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f becoming light</div>
+                        <div class="logo__circle">
+                            <div class="logo__letter">
+                                <img src="img/shuriken.jpg" alt="image">
+                            </div>
+                            <div class="logo__letter">
+                                <img src="img/shuriken.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="content">
+                    <div class="character">
+                        <div class="character__name">
+                            <input type="text" id="playerName" readonly>
+                        </div>
+                        <div class="character__externality">
+                            <img src="img/detective.jpg" alt="image">
+                        </div>
+                        <div class="character__characteristics">
+                            <label>Здоровье</label>
+                            <input type="text" id="playerHealth" class="character__input" readonly>
+                            <label>Урон</label>
+                            <input type="text" id="playerDamage" class="character__input" readonly>
+                            <label>Броня</label>
+                            <input type="text" id="playerArmor" class="character__input" readonly>
+                            <label>Уклонение</label>
+                            <input type="text" id="playerEvasion" class="character__input" readonly>
+                            <div>%</div>
+                            <label>Меткость</label>
+                            <input type="text" id="playerSharpshooting" class="character__input" readonly>
+                            <div>%</div>
+                        </div>
+                        <p>Навыки</p>
+                        <div class="character__skills">
+                            <div class="skills"></div>
+                            <div class="skills"></div>
+                            <div class="skills"></div>
+                            <div class="skills"></div>
+                        </div>
+                        <p>Снаряжение</p>
+                        <div class="character__equipment">
+                            <div class="cell no_weapons" id="weapon"></div>
+                            <div class="cell no_waistcoat" id="waistcoat"></div>
+                            <div class="cell no_helmet" id="helmet"></div>
+                            <div class="cell no_device" id="device"></div>
+                        </div>
+                        <p>Сумка</p>
+                        <div class="character__backpack">
+                            <div class="cell empty"></div>
+                            <div class="cell empty"></div>
+                            <div class="cell empty"></div>
+                            <div class="cell empty"></div>
+                        </div>
+                    </div>
+                    <div class="chapter">
+                        <div class="story">
+                            <div class="story__title">Сюжет</div>
+                            <div class="story__wrapper">
+                                <p class="story-line story__message"><span>Рэй Контли</span>Ещё одна ночь - ещё один инцидент. Этот город не перестаёт удивлять своей жестокостью. На этот раз он не пощадил тех, кто и сам уже давно забыл что такое сострадание. Помощь копам в поиске улик - это обычное дело для меня, но, увидев место преступления, я подумал, что предпочёл бы сейчас быть дома.</p>
+                                <p class="story-line story__interlocutor"><span>Детектив Джо Флори</span>- Спасибо, что приехал. У нас здесь одинадцать трупов. Судя по татуировкам, все из банды &quot;Банога&quot;. Тела изувечены предположительно режущим и рубящим холодным оружием. Также обнаружены следы крови ещё шестерых неизвестных.</p>
+                                <p class="story-line story__interlocutor"><span>Детектив Джо Флори</span>- Жаль, что видимся только в таких ситуациях. Опытных сотрудников очень нехватает. С тех пор как ты и еще несколько толковых ребят ушли с полиции, у меня работы прибавилось.</p>
+                                <p class="story-line story__message"><span>Рэй Контли</span>По пути домой, я пытался собрать все мысли в кучу, но сделать это, честно говоря, было не легко. На часах 4 часа утра, а это значит, что я без сна уже 40 часов. Одинадцать участников банды порублены на куски в переулке на своей территории. Дерзкая резня... Банда &quot;Банога&quot; - одна из самых влиятельных банд в городе. Не представляю кому могло прийти в голову начать войну с ними. Бессмысленно надеяться и на то, что в столь кровавом деле найдется очевидец, который рискнёт дать свидетельские показания...</p>
+                                <p class="story-line story__message"><span>Рэй Контли</span>После обеда меня ждал ещё один &quot;сюрприз&quot;. В офис, который я арендую, пришел незнакомец со своей личной охраной и предложил мне работу. Он ищет свою приёмную дочь, которая сбежала из Китая с малознакомым филиппинцем, вскружившим ей голову. Неделю назад они были в Кесон-Сити, теперь след привел сюда. Этому заботливому папаше нужен частный детектив, хорошо знающий город. Аванс 2 тысячи долларов и еще 8 тысяч, если удастся найти девчёнку. Весьма не дурно. В этом городе сложно найти заказ больше, чем на 2 тысячи.<br>Итак, Мия Вэй, 26 лет, фото. Биологический отец - гаитянин, мать - пакистантка. Прибыла в Йоханнесбург из Манилы, с пересадкой в Доха(Катар) неделю назад под именем Роксана Лэйк. Далее рейсовым автобусом приехала сюда. Странно, 26 лет - это не тот возраст, в котором девушки, бросая всё, сбегают с малознакомыми парнями из страны...<br>Так... Некий Лером Кири летел тем же рейсом, и ехал тем же автобусом. Это, скорее всего и есть &quot;наш филиппинский Ромео&quot;. Им нужны будут новые документы и я, кажется знаю, к кому в этом городе они обратятся.</p>
+                                <p class="story-line story__interlocutor"><span>Триш Фьюри</span>- Контли, дорогой, как я рада видеть тебя. Выглядишь не очень. Касательно твоей просьбы... К одному из моих людей три дня назад обращалась подходящая под описание девушка. С ней был парень. Ты же знаешь, как мы ценим наших клиентов. Мы позаботились и с вчерашнего дня её имя Аманда Лоуренс. Его имя - Маркус Томико. Для тебя не секрет, с каким удовольствием я оказываю тебе подобные услуги... И, раз уж ты теперь мой должник, у меня есть для тебя одно дело. Вот адрес. Услуга за услугу.</p>
+                                <p class="story-line story__message"><span>Рэй Контли</span>Триш как всегда в своём репертуаре. Воплощение лести, флирта и сарказма на этой земле. Иногда кажется, что я её обожаю, а иногда, что ненавижу. В прошлом, когда я был копом, мы не очень ладили. Да что уж там скрывать, я просто мечтал её посадить. Но с тех пор, как она стала владелицей ночного клуба, мне от неё больше пользы, чем вреда.<br>Она уверена, что один из её барменов подсел на наркоту и начал приворовывать с кассы. Мне придётся слегка проучить его. Лёгкое рукоприкладство.<br>В подобных ситуациях, когда знаешь, что придётся замарать руки, первым делом нужно обеспечить себе алиби. Я приехал по адресу. Спальный район... Я немного походил, поинтересовался не сдаётся ли в аренду где-то рядом квартира. Добрые люди подсказали к кому обратиться. Я встретился с владельцем, посмотрел квартиру, пообещал подумать. Теперь можно наведаться и к бармену.<br><br>Дверь приоткрыта, а из квартиры доносятся звуки борьбы... Войдя в комнату, я увидел, как какой-то громила выбивает последний дух из нашего бармена. Моя просьба успокоиться только усугубила ситуацию. Жаль, что я оставил револьвер в машине...<button id="startMission">Начать</button></p>
+                            </div>
+                            <div class="story__band"></div>
+                            <div class="story__control">
+                                <button id="storyOnward">Далее</button>
+                            </div>
+                            <div class="story__mask"></div>
+                        </div>
+                        <div class="arena"></div>
+                    </div>
+                    <div class="menu"></div>
+                </div>
+            </div>
+            
+            <div class="noteBlock"></div>
+            
+            <div class="buttonBlock">
+                <div class="buttonBlock__wrapper">
+                    <button class="buttonBlock__buttons" id="buttonPerform">Применить</button>
+                    <button class="buttonBlock__buttons" id="buttonPutInBag">Снять</button>
+                    <button class="buttonBlock__buttons" id="buttonSell">Продать</button>
+                    <button class="buttonBlock__buttons" id="buttonСancel">Отмена</button>
+                </div>
+            </div>
+            
+            <div class="darknessBlock">
+                <div class="darknessBlock__smoke"></div>
+                <div class="darknessBlock__smoke"></div>
+                <div class="darknessBlock__smoke"></div>
+                <div class="darknessBlock__smoke"></div>
+                <div class="darknessBlock__smoke"></div>
+                <div class="darknessBlock__smoke"></div>
+                <div class="darknessBlock__smoke"></div>
+            </div>
+            
+            <footer></footer>
+            
+        </div>
+        
+        <script src="jquery/dist/jquery.min.js"></script>
+        <script src="js/game.js"></script>
+    </body>
+</html>
