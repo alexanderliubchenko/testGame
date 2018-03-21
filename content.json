@@ -4,92 +4,286 @@
             "image": "",
             "title": "Оружие отсутствует.",
             "characteristics": {
-                "health": 0,
                 "damage": 0,
                 "armor": 0,
                 "evasion": 0,
                 "sharpshooting": 0
-            }
+            },
+            "type": "nothing",
+            "ammunition": "-Infinity"
         },
         "no_waistcoat": {
             "image": "",
             "title": "Жилет отсутствует.",
             "characteristics": {
-                "health": 0,
                 "damage": 0,
                 "armor": 0,
                 "evasion": 0,
                 "sharpshooting": 0
-            }
+            },
+            "type": "nothing"
         },
         "no_helmet": {
             "image": "",
             "title": "Шлем отсутствует.",
             "characteristics": {
-                "health": 0,
                 "damage": 0,
                 "armor": 0,
                 "evasion": 0,
                 "sharpshooting": 0
-            }
+            },
+            "type": "nothing"
         },
         "no_device": {
             "image": "",
-            "title": "Устройство отсутствует.",
+            "title": "Предмет отсутствует.",
             "characteristics": {
-                "health": 0,
                 "damage": 0,
                 "armor": 0,
                 "evasion": 0,
                 "sharpshooting": 0
-            }
+            },
+            "type": "nothing"
         },
         "empty": {
             "image": "",
             "title": "Пусто",
             "characteristics": {
-                "health": 0,
                 "damage": 0,
                 "armor": 0,
                 "evasion": 0,
                 "sharpshooting": 0
-            }
+            },
+            "type": "nothing"
         },
         "revolver": {
             "image": "url('../img/revolver.jpg')",
-            "title": "Револьвер",
+            "title": "Револьвер Ruger",
             "characteristics": {
-                "health": 0,
                 "damage": 200,
                 "armor": 0,
                 "evasion": 0,
                 "sharpshooting": 0
             },
-            "type": "gun"
+            "type": "gun",
+            "ammunition": 6,
+            "price": 400,
+            "price_ammo": 10
         },
         "pistol": {
             "image": "url(../img/pistol.jpg)",
-            "title": "Пистолет",
+            "title": "Пистолет Beretta",
             "characteristics": {
-                "health": 0,
                 "damage": 220,
                 "armor": 0,
                 "evasion": 0,
                 "sharpshooting": 0
             },
-            "type": "gun"
+            "type": "gun",
+            "ammunition": 0,
+            "price": 440,
+            "price_ammo": 10
+        },
+        "colt": {
+            "image": "url(../img/colt1911.jpg)",
+            "title": "Пистолет Colt",
+            "characteristics": {
+                "damage": 240,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "gun",
+            "ammunition": 0,
+            "price": 480,
+            "price_ammo": 10
+        },
+        "glock": {
+            "image": "url(../img/Glock.jpg)",
+            "title": "Пистолет Glock",
+            "characteristics": {
+                "damage": 260,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "gun",
+            "ammunition": 0,
+            "price": 600,
+            "price_ammo": 10
+        },
+        "sw": {
+            "image": "url(../img/pistolSW.jpg)",
+            "title": "Пистолет S&W",
+            "characteristics": {
+                "damage": 250,
+                "armor": 0,
+                "evasion": 10,
+                "sharpshooting": 0
+            },
+            "type": "gun",
+            "ammunition": 0,
+            "price": 800,
+            "price_ammo": 10
+        },
+        "mp": {
+            "image": "url(../img/MP5.jpg)",
+            "title": "Автомат MP5",
+            "characteristics": {
+                "damage": 280,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "gun",
+            "ammunition": 0,
+            "price": 850,
+            "price_ammo": 20
+        },
+        "fabarm": {
+            "image": "url(../img/FABARM.jpg)",
+            "title": "Ружье FABARM",
+            "characteristics": {
+                "damage": 300,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "gun",
+            "ammunition": 0,
+            "price": 900,
+            "price_ammo": 20
+        },
+        "winchester": {
+            "image": "url(../img/Winchester.jpg)",
+            "title": "Ружье Winchester",
+            "characteristics": {
+                "damage": 320,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "gun",
+            "ammunition": 0,
+            "price": 1100,
+            "price_ammo": 20
+        },
+        "mossberg": {
+            "image": "url(../img/Mossberg.jpg)",
+            "title": "Ружье Mossberg",
+            "characteristics": {
+                "damage": 350,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "gun",
+            "ammunition": 0,
+            "price": 1300,
+            "price_ammo": 20
+        },
+        "steyr": {
+            "image": "url(../img/steyr.jpg)",
+            "title": "Винтовка Steyr",
+            "characteristics": {
+                "damage": 400,
+                "armor": 0,
+                "evasion": 0,
+                "sharpshooting": 10
+            },
+            "type": "gun",
+            "ammunition": 0,
+            "price": 2000,
+            "price_ammo": 30
+        },
+        "bulletproof": {
+            "image": "url(../img/wait.jpg)",
+            "title": "Бронежилет Light",
+            "characteristics": {
+                "damage": 0,
+                "armor": 150,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "bodyShield",
+            "price": 500
+        },
+        "bulletproofhard": {
+            "image": "url(../img/jacket.jpg)",
+            "title": "Бронежилет Heavy",
+            "characteristics": {
+                "damage": 0,
+                "armor": 250,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "bodyShield",
+            "price": 900
+        },
+        "helmethard": {
+            "image": "url(../img/helmet1.jpg)",
+            "title": "Шлем-каска Heavy",
+            "characteristics": {
+                "damage": 0,
+                "armor": 40,
+                "evasion": 0,
+                "sharpshooting": 0
+            },
+            "type": "headShield",
+            "price": 200
         },
         "electroshock": {
             "image": "url(../img/electroshock.jpg)",
             "title": "Электрошокер",
             "characteristics": {
-                "health": 0,
                 "damage": 50,
                 "armor": 0,
-                "evasion": 20,
+                "evasion": 10,
                 "sharpshooting": 10
             },
-            "type": "rig"
+            "type": "rig",
+            "price": 100
+        }
+    },
+    
+    "rivals": {
+        "rival1": {
+            "name": "Рой Валаччи",
+            "image": "url(../img/hoodlum.jpg)",
+            "health": 1200,
+            "characteristics": {
+                "damage": 80,
+                "armor": 0,
+                "evasion": 10,
+                "sharpshooting": 50
+            },
+            "equipmentImages": {
+                "image1": " ",
+                "image2": " ",
+                "image3": " ",
+                "image4": " "
+            },
+            "description": "Незнакомец",
+            "money": 0
+        },
+        "rival2": {
+            "name": "Сонни Валаччи (+2)",
+            "image": "url(../img/rival2.jpg)",
+            "health": 3000,
+            "characteristics": {
+                "damage": 270,
+                "armor": 0,
+                "evasion": 10,
+                "sharpshooting": 70
+            },
+            "equipmentImages": {
+                "image1": "url(../img/pistol.jpg)",
+                "image2": " ",
+                "image3": " ",
+                "image4": " "
+            },
+            "description": "Сонни Валаччи - известный в городе гангстер, владелец итальянского ресторана",
+            "money": 150
         }
     }
 }
